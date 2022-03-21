@@ -1,0 +1,45 @@
+{
+  "xsappname": "bookshop-ec35f5e3trial-London",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.BookshopAuditor",
+      "description": "BookshopAuditor"
+    },
+    {
+      "name": "$XSAPPNAME.BookshopAdmin",
+      "description": "BookshopAdmin"
+    },
+    {
+      "name": "$XSAPPNAME.BookshopCustomer",
+      "description": "BookshopCustomer"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "BookshopAuditor",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.BookshopAuditor"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "BookshopAdmin",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.BookshopAdmin"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "BookshopCustomer",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.BookshopCustomer"
+      ],
+      "attribute-references": []
+    }
+  ]
+}

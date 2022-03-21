@@ -1,0 +1,41 @@
+{
+    "[sandbox]": {
+        "auth": {
+            "passport": {
+                "strategy": "mock",
+                "users": {
+                    "bookshop.auditor@tester.sap.com": {
+                        "password": "initial",
+                        "ID": "auditor",
+                        "userAttributes": {
+                            "email": "bookshop.auditor@tester.sap.com"
+                        },
+                        "roles": [
+                            "BookshopAuditor"
+                        ]
+                    },
+                    "bookshop.admin@tester.sap.com": {
+                        "password": "initial",
+                        "ID": "admin",
+                        "userAttributes": {
+                            "email": "bookshop.admin@tester.sap.com"
+                        },
+                        "roles": [
+                            "BookshopAdmin"
+                        ]
+                    },
+                    "bookshop.customer@tester.sap.com": {
+                        "password": "initial",
+                        "ID": "customer",
+                        "userAttributes": {
+                            "email": "bookshop.customer@tester.sap.com"
+                        },
+                        "roles": [
+                            "BookshopCustomer"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}
