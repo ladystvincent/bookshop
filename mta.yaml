@@ -10,6 +10,7 @@ modules:
   - name: bookshop-db
   - name: bookshop-xsuaa
   - name: bookshop-destination
+  - name: bookshop-logs
   provides:
   - name: srv-api
     properties:
@@ -23,6 +24,7 @@ modules:
   path: gen/db
   requires:
   - name: bookshop-db
+  - name: bookshop-logs
   parameters:
     buildpack: nodejs_buildpack
 - name: bookshop-destinations
@@ -164,6 +166,11 @@ resources:
   parameters:
     service: html5-apps-repo
     service-plan: app-host
+- name: bookshop-logs
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: application-logs
+    service-plan: lite
 parameters:
   deploy_mode: html5-repo
   enable-parallel-deployments: true
